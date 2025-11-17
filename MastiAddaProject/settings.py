@@ -1,3 +1,4 @@
+import os  # Ensure this line is at the very top (agar nahi hai toh)
 """
 Django settings for MastiAddaProject project.
 
@@ -25,7 +26,13 @@ SECRET_KEY = 'django-insecure--t26$lee765wf=ba96&bofao87xdij-jftm9_wd8xd=z6lid8q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']  # Temporarily * set karne se deployment ke time kisi bhi URL se access mil jata hai.
+# MastiAddaProject/settings.py
+
+# ... (baaki code)
+
+ALLOWED_HOSTS = ['your-render-app-name.onrender.com', 'localhost', '127.0.0.1']
+
+# ... (baaki code)
 
 
 # Application definition
