@@ -30,7 +30,9 @@ DEBUG = True
 
 # ... (baaki code)
 
-ALLOWED_HOSTS = ['your-render-app-name.onrender.com', 'localhost', '127.0.0.1']
+# MastiAddaProject/settings.py
+
+ALLOWED_HOSTS = ['masti-adda-coding-zone.onrender.com', 'localhost', '127.0.0.1']
 
 # ... (baaki code)
 
