@@ -23,3 +23,18 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('videos/', include('coding_zone_app.urls')), # <-- Yeh line zaruri hai
 ]
+
+# MastiAddaProject/urls.py
+
+from django.contrib import admin
+from django.urls import path, include
+# Naya import: redirect function
+from django.views.generic.base import RedirectView 
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('videos/', include('coding_zone_app.urls')),
+    
+    # Nayi line: Jab koi base URL '/' par aayega, toh usse '/videos/' par redirect kar do.
+    path('', RedirectView.as_view(url='videos/', permanent=True), name='index'),
+]
